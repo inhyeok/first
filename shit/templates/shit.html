@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>자리자리</title>
+  <meta http-equiv="Content-Type" content="html/text; charset=utf-8" >
+  <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maxium-scale=1.0, minimum-scale=1.0, width=dievice-width" />
+  <style type="text/css">
+    body{background-color: #F1BDBD;}
+    li{list-style: none; float: left;}
+    .st{border:none; background-color: #CCE8E9; font-size: 15px; width: 40px;}
+    .desk{width: 16%; height: 40px; background-color: #CCE8E9; margin: 1%; padding-top: 20px; border: 5px #F3F3F1 solid;}
+    #bb{margin-left: 20%;}
+  </style>
+</head>
+<body>
+<center>
+  <h2>교탁</h2>
+  <ul>
+  {% for m in m_list %}
+    <li class="desk"><input class="st" value={{ m }} />&nbsp;</li>
+  {% endfor %}
+    <li class="desk" id="bb">홍성호</li>
+    <li class="desk">안준모</li>
+  </ul>
+  <h2>Yes~~ GO TO BAT (고 추 밭)</h2>
+  <h1>핑쿠핑쿠하네요~</h1>
+</center>
+</body>
+</html>
