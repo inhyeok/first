@@ -1,1 +1,1 @@
-this is first fuck
+JAMONG's
