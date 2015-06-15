@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>insert</title>
+	<meta http-equiv="Content-Type" content="html/text; charset=utf-8" >
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maxium-scale=1.0, minimum-scale=1.0, width=dievice-width" />
+	<script type="text/javascript">
+		function confirm(a){
+			if(!a.u_id.value){alert("insert ID!!"); return false;}
+			else if(!a.u_pw.value){alert("insert pw!!"); return false;}
+			else if(!a.u_pw1.value){alert("insert pw1!!"); return false;}
+			else if(a.u_pw.value != a.u_pw1.value){alert("unsame pw"); return false;}
+			return true;
+		}
+	</script>
+</head>
+<body>
+	<form action="/join" method="POST" onsubmit="return confirm(this);" >
+		<input id='u_id' name='u_id' type='text' placeholder='id' />
+		<input id='u_pw' name='u_pw' type='password' placeholder='pw' />
+		<input id='u_pw1' name='u_pw1' type='password' placeholder='pw1' />
+		<input type='submit' value='ok'>
+	</form>
+</body>
+</html>
